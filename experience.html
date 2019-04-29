@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="Image\logo\airbnblogo.png" type="image/x-icon" />
+    <title>Holiday Rental, Homes, Experience, & places</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+     
+    <link rel="stylesheet" href="css\main.css">
+    <style type="text/css">
+    #mainMenu {
+     background-color: #ebebeb;
+       }
+                    
+    .darkMenu {
+      font-weight: bolder;
+       }
+                    
+     #navbarBasicExample .navbar-start a.navbar-item:hover {
+       background-color: #ebebeb;
+       color: grey;
+    }
+     </style>
+     </head>
+            
+     <body>
+     <!-- put your code here! -->
+            
+      <!-- Menu logo-->
+    <nav class="navbar darkMenu is-fixed-top " id="mainMenu" role="navigation" aria-label="main navigation">
+     <!-- logo -->
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="index.html" />
+                        <img src="image/logo/airbnblogo.png" />
+                        </a>
+                    </div>
+                    <!-- end logo -->
+            
+                    <!-- menu items -->
+                    <div id="navbarBasic" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item">
+                                Became Host
+                            </a>
+                            <a class="navbar-item">
+                                As a Host Experience
+                            </a>
+                            <a class="navbar-item">
+                                Help
+                            </a>
+                            <a class="navbar-item" href="signup.html" /> Signup
+                            </a>
+                            <a class="navbar-item" href="login.html" /> Login
+                            </a>
+                        </div>
+                        <div class=" navbar-end ">
+                            <a class=" navbar-item ">
+                                Terms & Privacy
+                            </a>
+                            <a class=" navbar-item ">
+                                <img src="image/ipimage/flag.png " alt=" Canada " />
+                            </a>
+                            <a class=" navbar-item ">
+                                C $
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end menu -->
+                </nav>
+                <!-- // end of menu -->
+    <!-- end of first menu -->
+<!--Filtering listing-->
+<br>
+<br>
+<section class="tasks container has-background-grey-lighter   ">
+        <br>
+        <form action=""> Any Where <input type="text" name="search" id="search"> 
+            <button id="btn" class="search">Search</button>
+        </form>
+        <div class="calendar"></div>
+        <br>
+    </section>
+       <!---filtered check box-->
+       <section class=" tasks container has-background-grey-lighter  ">
+        <div class ="columns is-3 is-multiline is-mobile">
+            <div class=" column" is-mobile>
+                <label class="checkbox" id="ch1">
+                        <input type="checkbox">
+                        Wireless Internet
+                </label>
+            </div>
+            <div class=" column"  is-mobile>
+                    <label class="checkbox" id="ch2">
+                            <input type="checkbox">
+                            5 Star Rated
+                    </label>
+                </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch3">
+                        <input type="checkbox">
+                            Smoking Allowed
+                    </label>
+            </div>
+         </div>   
+         <div class ="columns is-3 is-multiline is-mobile ">
+                <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch4">
+                            <input type="checkbox">
+                            Free parking
+                    </label>
+                </div>
+                <div class=" column"   is-mobile>
+                        <label class="checkbox" id="ch5">
+                                <input type="checkbox">
+                               Bed and Breakfast
+                        </label>
+                    </div>
+                <div class=" column"   is-mobile>
+                        <label class="checkbox" id="ch6">
+                            <input type="checkbox">
+                                Pet  Allowed
+                        </label>
+                </div>
+           </div>   
+         <div class ="columns is-3 is-multiline is-mobile ">
+            <div class=" column"   is-mobile>
+                <label class="checkbox" id="ch7">
+                        <input type="checkbox">
+                        Gardens
+                </label>
+            </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch8">
+                            <input type="checkbox">
+                           Amusement park
+                    </label>
+                </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch9">
+                        <input type="checkbox">
+                            Event Allowed
+                    </label>
+            </div>
+         </div>   
+        <div class ="columns is-3 is-multiline is-mobile ">
+            <div class=" column"   is-mobile>
+                <label class="checkbox" id="ch10">
+                        <input type="checkbox">
+                        Safari
+                </label>
+            </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch11">
+                            <input type="checkbox">
+                           Museum
+                    </label>
+                </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch12">
+                        <input type="checkbox">
+                          Conservation Center
+                    </label>
+            </div>
+         </div>   
+        </section>
+    <!--Search bar with listings display--->
+
+    <section  class=" homes ">
+      <br>
+      <br>
+      <h1>Experience.....</h1>
+      <h2>Highly reviewed by locals and travellers worldwide</h2>
+            <div class="Rows is-multiline is-mobile is-centered">
+                    <div class="row is-narrow">
+                      <figure class="image textWithBlurredBg">
+                            <img src="image\experience\botonical.png" onclick="p1()">
+                            <h2 class="title">Botanical Garden </h2>
+                            <h3 class="subtitle">Montreal</h3>
+                      </figure>
+                            <h1> 1 Bed studio Appartment. </h1>
+                      </div>
+                    
+                    <div class="row is-narrow">
+                      <figure class="image textWithBlurredBg">
+                           <img src="image\experience\mountain.jpg">
+                          <h2 class="title"id="p2" >Blue Mountain</h2>
+                            <h3 class="subtitle">Colligwood</h3>
+                      </figure>
+                    </div>
+                    <div class="row is-narrow">
+                      <figure class="image textWithBlurredBg">
+                          <img src="image\experience\canada-aviation-and-space.jpg">
+                          <h2 class="title" id="p3">Space Aviation Museum</h2>
+                            <h3 class="subtitle">Ottawa  </h3>
+                      </figure>
+                    </div>
+                    <div class="row is-narrow">
+                      <figure class="image textWithBlurredBg">
+                          <img src="image\experience\fallsview.jpg">
+                          <h2 class="title"id="p4" >Falls View Waterpark</h2>
+                            <h3 class="subtitle">Naigara</h3>
+                      </figure>
+                    </div>
+                  </div>
+                    <div class="rows is-multiline is-mobile is-centered">
+                            <div class="row is-narrow">
+                              <figure class="image textWithBlurredBg">
+                                    <img src="image\experience\butterfly.jpg">
+                                    <h2 class="title" id="p5">Butterfly Century</h2>
+                                    <h3 class="subtitle">Naigara on the Lake</h3>
+                              </figure>
+                            </div>
+                            <div class="row is-narrow">
+                              <figure class="image textWithBlurredBg">
+                                   <img src="image\experience\tulips-tour-times.jpg">
+                                  <h2 class="title"id="p6">Tulip Festival </h2>
+                                    <h3 class="subtitle">Ottowa</h3>
+                              </figure>
+                            </div>
+                            <div class="row is-narrow">
+                              <figure class="image textWithBlurredBg">
+                                  <img src="image\experience\wonderland.jpg">
+                                  <h2 class="title"id="p7">Wonderland</h2>
+                                    <h3 class="subtitle">Toronto</h3>
+                              </figure>
+                            </div>
+                            <div class="row is-narrow">
+                              <figure class="image textWithBlurredBg">
+                                  <img src="image\experience\safari.JPG">
+                                  <h2 class="title"id="p8">Aferican Lion Safari</h2>
+                                    <h3 class="subtitle">Toronto</h3>
+                              </figure>
+                            </div>
+            </div>
+   <!-- END Second Filter Tags -->
+   
+       
+
+<!-- FOOTER -->
+<footer>
+  <br>
+  <p> © Copyright 2019</p>
+</footer>
+<!-- END OF FOOTER -->
+
+<!----Linke to Javascript File-->
+<script src="js/login.js"></script>                
+    </section> 
+    </body></html>
+        

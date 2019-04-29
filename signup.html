@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="image\logo\airbnblogo.png" type="image/x-icon" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style type="text/css">
+        #mainMenu {
+            background-color: #ebebeb;
+        }
+        
+        .darkMenu {
+            font-weight: bolder;
+        }
+        
+        #navbarBasicExample .navbar-start a.navbar-item:hover {
+            background-color: #ebebeb;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- put your code here! -->
+
+    <!-- first menu -->
+    <nav class="navbar darkMenu is-fixed-top " id="mainMenu" role="navigation" aria-label="main navigation">
+        <!-- logo -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html" />
+            <img src="image\logo\airbnblogo.png" />
+            </a>
+        </div>
+        <!-- end logo -->
+
+        <!-- menu items -->
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Became Host
+                </a>
+                <a class="navbar-item">
+                    As a Host Experience
+                </a>
+                <a class="navbar-item">
+                    Help
+                </a>
+                <a class="navbar-item" href="signup.html" /> Signup
+                </a>
+                <a class="navbar-item" href="login.html" /> Login
+                </a>
+            </div>
+            <div class=" navbar-end ">
+                <a class=" navbar-item ">
+                    Terms & Privacy
+                </a>
+                <a class=" navbar-item ">
+                    <img src="image/ipimage/flag.png " alt=" Canada " />
+                </a>
+                <a class=" navbar-item ">
+                    C $
+                </a>
+            </div>
+        </div>
+        <!-- end menu -->
+    </nav>
+    <!-- // end of first menu -->
+    <div class="columns is-vcentered">
+        <div class="login column is-4 ">
+            <section class="section">
+                <div class="has-text-centered">
+                    <img class="login-logo" src="Image/login/login.png">
+                </div>
+
+                <div class="field">
+                    <label class="label" id="uName">Username</label>
+                    <div class="control has-icons-right">
+                        <input class="input" type="text" placeholder="User Name">
+                        <span class="icon is-small is-right">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field"id="uEmail">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-right">
+                        <input class="input" type="text" placeholder="Email">
+                        <span class="icon is-small is-right">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" id="uPass">Password</label>
+                    <div class="control has-icons-right">
+                        <input class="input" type="password" placeholder="Password">
+                        <span class="icon is-small is-right">
+                            <i class="fa fa-key"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="has-text-centered">
+                    <a class="button is-vcentered is-primary is-outlined" onclick="getSignup()">Login</a>
+                    <a class="button is-vcentered is-primary is-outlined" onclick="getCancel()">Cancel</a>
+                </div>
+                <!--Have a account please login-->
+                <div class="has-text-centered">
+                    <a href="login.html"> Already have an account? <strong>Log in now !</strong></a>
+                </div>
+            </section>
+        
+    </div>
+    <script src="js/signup.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

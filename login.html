@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="image\logo\airbnblogo.png" type="image/x-icon" />
+
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style type="text/css">
+        #mainMenu {
+            background-color: #ebebeb;
+        }
+        
+        .darkMenu {
+            font-weight: bolder;
+        }
+        
+        #navbarBasicExample .navbar-start a.navbar-item:hover {
+            background-color: #ebebeb;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- put your code here! -->
+
+    <!-- first menu -->
+    <nav class="navbar darkMenu is-fixed-top " id="mainMenu" role="navigation" aria-label="main navigation">
+        <!-- logo -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+            <img src="image\logo\airbnblogo.png" />
+            </a>
+        </div>
+        <!-- end logo -->
+
+        <!-- menu items -->
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Became Host
+                </a>
+                <a class="navbar-item">
+                    As a Host Experience
+                </a>
+                <a class="navbar-item">
+                    Help
+                </a>
+                <a class="navbar-item" href="signup.html"> Signup
+                </a>
+                <a class="navbar-item" href="login.html"> Login
+                </a>
+            </div>
+            <div class=" navbar-end ">
+                <a class=" navbar-item ">
+                    Terms & Privacy
+                </a>
+                <a class=" navbar-item ">
+                    <img src="image/ipimage/flag.png " alt=" Canada " />
+                </a>
+                <a class=" navbar-item ">
+                    CAD $
+                    
+                </a>
+            </div>
+        </div>
+        <!-- end menu -->
+    </nav>
+    <!-- // end of first menu -->
+    <!--------------Login Page-->
+    <div class="columns is-vcentered">
+        <div class="login column is-4 ">
+            <section class="section">
+                <div class="has-text-centered">
+                    <img class="login-logo" src="Image/login/login.png">
+                </div>
+                <form>
+                <!---Login witn Facebook-->
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                        <a class="button is-info">
+                            <img src="image\login\facebook.png" class="im" /> Login with Facebook
+                            <a href="https://www.facebook.com/">
+                        </a>
+                        </a>
+                    </p>
+                <!--Login With Google Account-->
+                    <p>
+                        <a class="button is-lite ">
+                            <img src="image\login\google.png" class="im"/>Login with Google
+                            <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        </a>
+                        </a>
+                    </p>
+                </div>
+
+<!----Login with Email Id / username and password-->
+                
+                <div class="field">
+                    <label class="label">Username</label>
+                    <div class="control has-icons-right">
+                        <input class="input" id="uName" type="text" placeholder="Email">
+                        <span class="icon is-small is-right">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Password</label>
+                    <div class="control has-icons-right">
+                        <input class="input" id="uPass" type="password" placeholder="Password">
+                        <span class="icon is-small is-right">
+                            <i class="fa fa-key"></i>
+                        </span>
+                    </div>
+                </div>
+                <!--Login Button-->
+                <div class="has-text-centered">
+                    <a class="button is-vcentered is-primary is-outlined" onclick="getInfo()">Login</a>
+                    <a class="button is-vcentered is-primary is-outlined" onclick="getCancel()">Cancel</a>
+                </div>
+                <!-- Cancel Button-->
+                <!--Doesn't have a login account-->
+                <div class="has-text-centered">
+                    <a href="signup.html"> Don't you have an account? Sign up now!</a>
+                </div>
+            </section>
+             </div>
+        </div>
+    </form>
+    <script src="js/Login.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

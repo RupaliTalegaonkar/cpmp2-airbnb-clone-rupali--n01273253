@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="Image\logo\airbnblogo.png" type="image/x-icon" />
+    <title>Holiday Rental, Homes, Experience, & places</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+     
+    <link rel="stylesheet" href="css\main.css">
+    <style type="text/css">
+    #mainMenu {
+     background-color: #ebebeb;
+       }
+                    
+    .darkMenu {
+      font-weight: bolder;
+       }
+                    
+     #navbarBasicExample .navbar-start a.navbar-item:hover {
+       background-color: #ebebeb;
+       color: grey;
+    }
+     </style>
+     </head>
+            
+     <body>
+     <!-- put your code here! -->
+            
+      <!-- Menu logo-->
+    <nav class="navbar darkMenu is-fixed-top " id="mainMenu" role="navigation" aria-label="main navigation">
+     <!-- logo -->
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="index.html" />
+                        <img src="image/logo/airbnblogo.png" />
+                        </a>
+                    </div>
+                    <!-- end logo -->
+            
+                    <!-- menu items -->
+                    <div id="navbarBasic" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item">
+                                Became Host
+                            </a>
+                            <a class="navbar-item">
+                                As a Host Experience
+                            </a>
+                            <a class="navbar-item">
+                                Help
+                            </a>
+                            <a class="navbar-item" href="signup.html" /> Signup
+                            </a>
+                            <a class="navbar-item" href="login.html" /> Login
+                            </a>
+                        </div>
+                        <div class=" navbar-end ">
+                            <a class=" navbar-item ">
+                                Terms & Privacy
+                            </a>
+                            <a class=" navbar-item ">
+                                <img src="image/ipimage/flag.png " alt=" Canada " />
+                            </a>
+                            <a class=" navbar-item ">
+                                C $
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end menu -->
+                </nav>
+                <!-- // end of menu -->
+    <!-- end of first menu -->
+<!--Filtering listing-->
+<br>
+<br>
+<section class="tasks container has-background-grey-lighter   ">
+        <br>
+        <form action=""> 
+          Any Where <input type="text" name="search" id="find"> 
+            <button id="btn" class="search" onclick="search()">Search</button>
+        </form>
+        <div class="calendar"></div>
+        <br>
+    </section>
+       <!---filtered check box-->
+       <section class=" tasks container has-background-grey-lighter  ">
+        <div class ="columns is-3 is-multiline is-mobile">
+            <div class=" column" is-mobile>
+                <label class="checkbox" id="ch1">
+                        <input type="checkbox">
+                        Wireless Internet
+                </label>
+            </div>
+            <div class=" column"  is-mobile>
+                    <label class="checkbox" id="ch2">
+                            <input type="checkbox">
+                            House
+                    </label>
+                </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch3">
+                        <input type="checkbox">
+                            Smoking Allowed
+                    </label>
+            </div>
+         </div>   
+         <div class ="columns is-3 is-multiline is-mobile ">
+                <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch4">
+                            <input type="checkbox">
+                            Free parking
+                    </label>
+                </div>
+                <div class=" column"   is-mobile>
+                        <label class="checkbox" id="ch5">
+                                <input type="checkbox">
+                               Bed and Breakfast
+                        </label>
+                    </div>
+                <div class=" column"   is-mobile>
+                        <label class="checkbox" id="ch6">
+                            <input type="checkbox">
+                                Pet  Allowed
+                        </label>
+                </div>
+           </div>   
+         <div class ="columns is-3 is-multiline is-mobile ">
+            <div class=" column"   is-mobile>
+                <label class="checkbox" id="ch7">
+                        <input type="checkbox">
+                        Air Conditioner
+                </label>
+            </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch8">
+                            <input type="checkbox">
+                            Apartment studio
+                    </label>
+                </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch9">
+                        <input type="checkbox">
+                            Event Allowed
+                    </label>
+            </div>
+         </div>   
+        <div class ="columns is-3 is-multiline is-mobile ">
+            <div class=" column"   is-mobile>
+                <label class="checkbox" id="ch10">
+                        <input type="checkbox">
+                        Microwave, Iron
+                </label>
+            </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch11">
+                            <input type="checkbox">
+                            Kitchen
+                    </label>
+                </div>
+            <div class=" column"   is-mobile>
+                    <label class="checkbox" id="ch12">
+                        <input type="checkbox">
+                            Extra bed
+                    </label>
+            </div>
+         </div>   
+        </section>
+        <!---End of check box filter-->
+    <!--Search bar with listings display--->
+
+    <section  class=" homes ">
+      <br>
+      <br>
+        <h1>Homes.......</h1>
+        <h2>Stay at comfort</h2>
+            <div class="container"></div>
+                  <div class="columns is-multiline is-mobil is-centered">
+                    <!----First Record of Listings-->
+                    <div class="column is-narrow column is-centered">
+                      <figure class="image textWithBlurredBg">
+                            <img src="image\home\home1.jpg" onclick="p1()">
+                            <h2 class="title">Montreal Apartment </h2>
+                            <h3 class="subtitle">Montreal</h3>
+                      </figure>
+                      </div>
+                      <div class="column is-narrow">
+                        <ul id="u1">
+                          <li id="a1"><h2>La Paige" Cute Apt Great location!</h2>  </li>    
+                          <li id="city"><p>Montreal</p></li>
+                          <li id="rooms"><p >3 guests  :   1 bedroom    :   2 beds   : 1 bath</p></li>
+                          <li id="amenities"><p> Kitchen   :  Microwave  :  oven</p></li>
+                          <li id="facilities"><p>Free Parking   :  Pet Allowed  :  smoking Allowed</p></li>
+                          <li id="description"><p>Close to transportation, cafes & restaurants nearby.</p></li>
+                        </ul>
+                    </div>
+                    <div class="column is-narrow">
+                      <ul>
+                        <li id="price">Price $53/per night</li>
+                        <li><br>
+                          <li><form action="">
+                              From <input type="date" name="date" id="date">
+                               To <input type="date" name="date" id="date1"></li>
+                              <li>Guests
+                              <input type="text" name="guest" id="guest"></li>
+                             </form>
+                          <div class="calendar"></div>
+                          <br>
+                          </li>
+                      </ul>
+                    <a class="button is-centered is-primary is-outlined" onclick="getBook()">Book</a>
+                    </div>
+                  </div>
+                  <!----End of Record-->
+                  <div class="columns is-multiline is-mobil is-centered">
+                    <!----Second Record of Listings-->
+                  <div class="column is-narrow">
+                      <figure class="image textWithBlurredBg">
+                           <img src="image\home\home2.jpg">
+                          <h2 class="title"id="p2" >Rest in peace</h2>
+                            <h3 class="subtitle">Tobermory</h3> 
+                      </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <ul id="u1">
+                          <li id="a1"><h2> Stunning scenery, wildlife and villages</h2>  </li>    
+                          <li id="city"><p>Tobermoryt</p></li>
+                          <li id="rooms"><p >3 guests  :   1 bedroom    :   2 beds   : 1 bath</p></li>
+                          <li id="amenities"><p> Kitchen   :  Microwave  :  oven</p></li>
+                          <li id="facilities"><p>Free Parking   :  Pet Allowed  :  smoking Allowed</p></li>
+                          <li id="description"><p>Very Good Service and amenities  </p></li>
+                        </ul>
+                    </div>
+                    <div class="column is-narrow">
+                        <ul>
+                          <li id="price">Price $203/per night</li>
+                          <li><br>
+                            <li><form action="">
+                                From <input type="date" name="date" id="date">
+                                 To <input type="date" name="date" id="date1"></li>
+                                <li>Guests
+                                <input type="text" name="guest" id="guest"></li>
+                               </form>
+                            <div class="calendar"></div>
+                            <br>
+                            </li>
+                        </ul>
+                      <a class="button is-centered is-primary is-outlined" onclick="getBook()">Book</a>
+                      </div>
+                    <!----End of Record-->
+                    <!----Listing Records-->
+                  </div>
+                  <div class="columns is-multiline is-mobil is-centered">
+                    <!--Third record of Listings-->
+                    <div class="column is-narrow">
+                      <figure class="image textWithBlurredBg">
+                          <img src="image\home\home3.jpg">
+                          <h2 class="title" id="p3">Ottawa Apartment</h2>
+                            <h3 class="subtitle">Ottawa  </h3>
+                      </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <ul id="u1">
+                          <li id="a1"><h2>"Down town  Great location!</h2>  </li>    
+                          <li id="city"><p>Ottawa</p></li>
+                          <li id="rooms"><p >4 guests  :   1 bedroom    :   2 beds   : 1.5 bath</p></li>
+                          <li id="amenities"><p> Kitchen   :  Microwave  :  Fridge</p></li>
+                          <li id="facilities"><p>Free Parking   :  Pet Allowed  : </p></li>
+                          <li id="description"><p>Great location  parliament house  Hill in 20 mins travelling</p></li>
+                        </ul>
+                    </div>
+                    <div class="column is-narrow">
+                        <ul>
+                          <li id="price">Price $75/per night</li>
+                          <li><br>
+                            <li><form action="">
+                                From <input type="date" name="date" id="date">
+                                 To <input type="date" name="date" id="date1"></li>
+                                <li>Guests
+                                <input type="text" name="guest" id="guest"></li>
+                               </form>
+                            <div class="calendar"></div>
+                            <br>
+                            </li>
+                        </ul>
+                      <a class="button is-centered is-primary is-outlined" onclick="getBook()">Book</a>
+                      </div>
+                    <!----End of Record-->
+                  </div>
+                  <div class="columns is-multiline is-mobil is-centered">
+                    <!----Fourth Record of Listings-->
+                    <div class="column is-narrow">
+                      <figure class="image textWithBlurredBg">
+                          <img src="image\home\home4.jpg">
+                          <h2 class="title"id="p4" >Weekend Home</h2>
+                            <h3 class="subtitle">Niagara</h3>
+                      </figure>
+                    </div>
+                  
+                  <div class="column is-narrow">
+                      <ul id="u1">
+                        <li id="a1"><h2>"Near Skylon Tower Apt Great location!</h2>  </li>    
+                        <li id="city"><p>Niagara</p></li>
+                        <li id="rooms"><p >8 guests  :   2 bedroom    :   4 beds   : 2 bath</p></li>
+                        <li id="amenities"><p> Kitchen   :  Microwave  :  Iron  :  Morning Breakfast</p></li>
+                        <li id="facilities"><p>Free Parking   :  Pet Allowed  :  smoking Allowed</p></li>
+                        <li id="description"><p>Very Closed to Niagara on the lake </p></li>
+                      </ul>
+                  </div>
+                  <div class="column is-narrow">
+                      <ul>
+                        <li id="price">Price $118/per night</li>
+                        <li><br>
+                          <li><form action="">
+                              From <input type="date" name="date" id="date">
+                               To <input type="date" name="date" id="date1"></li>
+                              <li>Guests
+                              <input type="text" name="guest" id="guest"></li>
+                             </form>
+                          <div class="calendar"></div>
+                          <br>
+                          </li>
+                      </ul>
+                    <a class="button is-centered is-primary is-outlined" onclick="getBook()">Book</a>
+                    </div>
+                   <!----End of Record-->
+                  </div>
+                  <div class="columns is-multiline is-mobil is-centered">
+                    <!----Fifth Record of Listings-->
+                          <div class="column is-narrow">
+                              <figure class="image textWithBlurredBg">
+                                    <img src="image\home\home6.jpg">
+                                    <h2 class="title" id="p5">Montreal Home</h2>
+                                    <h3 class="subtitle">Montreal</h3>
+                              </figure>
+                            </div>
+                            <div class="column is-narrow">
+                                <ul id="u1">
+                                  <li id="a1"><h2>Near Botanical Garden Apt Great location!</h2>  </li>    
+                                  <li id="city"><p>Montreal</p></li>
+                                  <li id="rooms"><p >3 guests  :   1 bedroom    :   2 beds   : 1 bath</p></li>
+                                  <li id="amenities"><p> Kitchen   :  Microwave  :  oven</p></li>
+                                  <li id="facilities"><p>Free Parking   :  Pet Allowed  :  smoking Allowed :</p></li>
+                                  <li id="description"><p>Very specious room</p></li>
+                                </ul>
+                            </div>
+                            <div class="column is-narrow">
+                                <ul>
+                                  <li id="price">Price $103/per night</li>
+                                  <li><br>
+                                    <li><form action="">
+                                        From <input type="date" name="date" id="date">
+                                         To <input type="date" name="date" id="date1"></li>
+                                        <li>Guests
+                                        <input type="text" name="guest" id="guest"></li>
+                                       </form>
+                                    <div class="calendar"></div>
+                                    <br>
+                                    </li>
+                                </ul>
+                              <a class="button is-centered is-primary is-outlined" onclick="getBook()">Book</a>
+                              </div>
+                    <!----End of Record-->
+                  </div>
+                  <div class="columns is-multiline is-mobil is-centered">
+                    <!----Sixth Record of Listings-->
+                            <div class="column is-narrow is-centered">
+                              <figure class="image textWithBlurredBg">
+                                   <img src="image\home\home7.jpg">
+                                  <h2 class="title"id="p6">Montreal Apartment</h2>
+                                    <h3 class="subtitle">Montreal</h3>
+                              </figure>
+                            </div>
+                            <div class="column is-narrow">
+                                <ul id="u1">
+                                  <li id="a1"><h2>Montreal : Youth Hostel- Guest House</h2>  </li>    
+                                  <li id="city"><p>Montreal</p></li>
+                                  <li id="rooms"><p >8 guests  :   2 bedroom    :   5 Bank beds   : 1 bath</p></li>
+                                  <li id="amenities"><p> Kitchen   :  Microwave  :  Iron  : Coffee maker : Toaster</p></li>
+                                  <li id="facilities"><p>Free Parking   :  Pet Allowed  :  smoking Allowed</p></li>
+                                  <li id="description"><p>Close to transportation, cafes & restaurants nearby        .</p></li>
+                                </ul>
+                            </div>
+                            <div class="column is-narrow">
+                                <ul>
+                                  <li id="price">Price $42/per night</li>
+                                  <li><br>
+                                    <li><form action="">
+                                        From <input type="date" name="date" id="date">
+                                         To <input type="date" name="date" id="date1"></li>
+                                        <li>Guests
+                                        <input type="text" name="guest" id="guest"></li>
+                                       </form>
+                                    <div class="calendar"></div>
+                                    <br>
+                                    </li>
+                                </ul>
+                              <a class="button is-centered is-primary is-outlined" onclick="getBook()">Book</a>
+                              </div>
+                     <!----End of Record-->
+                    </div>
+                    <div class="columns is-multiline is-mobil is-centered">
+                    <!----Seventh Record of Listings-->
+                            <div class="column is-narrow">
+                              <figure class="image textWithBlurredBg">
+                                  <img src="image\home\home8.jpg">
+                                  <h2 class="title"id="p7">Toronto Apartment</h2>
+                                    <h3 class="subtitle">Toronto</h3>
+                              </figure>
+                            </div>
+                            <div class="column is-narrow">
+                                <ul id="u1">
+                                  <li id="a1"><h2>Near distillery district studio Apt Great location!</h2>  </li>    
+                                  <li id="city"><p>Toronto</p></li>
+                                  <li id="rooms"><p >3 guests  :   1 bedroom    :   2 beds   : 1 bath</p></li>
+                                  <li id="amenities"><p> Kitchen   :  Microwave : Iron</p></li>
+                                  <li id="facilities"><p>Free Parking   :  Pet Allowed  :  smoking Allowed</p></li>
+                                  <li id="description"><p>Close to transportation, cafes & restaurants nearby.</p></li>
+                                </ul>
+                            </div>
+                            <div class="column is-narrow">
+                                <ul>
+                                  <li id="price">Price $53/per night</li>
+                                  <li><br>
+                                    <li><form action="">
+                                        From <input type="date" name="date" id="date">
+                                         To <input type="date" name="date" id="date1"></li>
+                                        <li>Guests
+                                        <input type="text" name="guest" id="guest"></li>
+                                       </form>
+                                    <div class="calendar"></div>
+                                    <br>
+                                    </li>
+                                </ul>
+                              <a class="button is-centered is-primary is-outlined" onclick="getBook()">Book</a>
+                              </div>
+                       <!----End of Record-->
+                      </div>
+                      <div class="columns is-multiline is-mobil is-centered">
+                    <!----Eighth Record of Listings-->      
+                            <div class="column is-narrow">
+                              <figure class="image textWithBlurredBg">
+                                  <img src="image\home\home9.jpg">
+                                  <h2 class="title"id="p8">Unusual Home</h2>
+                                    <h3 class="subtitle">Toronto</h3>
+                              </figure>
+                            </div>
+                            <div class="column is-narrow">
+                                <ul id="u1">
+                                  <li id="a1"><h2>"Down town  Apt Great location!</h2>  </li>    
+                                  <li id="city"><p>Toronto </p></li>
+                                  <li id="rooms"><p >6 guests  :   2 bedroom    :   3 beds   : 1 bath</p></li>
+                                  <li id="amenities"><p> Kitchen   :  Microwave  :  Coffee maker : Toaster</p></li>
+                                  <li id="facilities"><p>Free Parking   :  Pet Allowed  :  smoking Allowed</p></li>
+                                  <li id="description"><p>Great location : “Close to transportation, cafes & restaurants nearby.” </p></li>
+                                </ul>
+                            </div>
+                            <div class="column is-narrow">
+                              <ul>
+                                <li id="price">Price $92/per night</li>
+                                <li><br>
+                                  <li><form action="">
+                                      From <input type="date" name="date" id="date">
+                                       To <input type="date" name="date" id="date1"></li>
+                                      <li>Guests
+                                      <input type="text" name="guest" id="guest"></li>
+                                     </form>
+                                  <div class="calendar"></div>
+                                  <br>
+                                  </li>
+                              </ul>
+                            <a class="button is-centered is-primary is-outlined" onclick="getBook()">Book</a>
+                            </div>
+                          <!---End of the record-->
+            
+               <!-- END Second Filter Tags -->
+    </section>
+   
+       
+
+<!-- FOOTER -->
+    <footer>
+      <br>
+      <p> © Copyright 2019</p>
+  </footer>
+  <!-- END OF FOOTER -->
+  
+  <!----Linke to Javascript File-->
+ 
+  <script src="js/search.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/main.js"></script>
+                
+    </section> 
+</body>
+</html>

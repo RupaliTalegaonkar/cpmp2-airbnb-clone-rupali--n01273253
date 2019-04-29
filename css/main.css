@@ -1,0 +1,168 @@
+       html{
+        box-sizing:border-box solid #000000;
+       }
+
+       body {
+            font-family: 'Nunito', sans-serif;
+            padding: 3em 3em 3em 3em;
+            font-weight: 800;
+           
+        }
+        /* Menu */
+        
+        .im {
+            width: 2em;
+            height: 2em;
+        }
+        
+        .img {
+            width: auto;
+            height: 500px;
+        }
+        /* HERO SECTION CSS --> JOIN TEAM SNAP */
+        
+        .landing {
+            width: auto;
+            height: auto;
+            max-width: auto;
+        }
+        /*----- logo---*/
+        .logo{
+            width:3em;
+            height:10em;
+
+        }
+        /* ------------------------------------ */
+        /* ------------------------------------ */
+        /* WHO WE ARE CSS */
+        
+        #whoWeAreContainer {
+            margin-top: 4em;
+            margin-bottom: 4em;
+        }
+        
+        #whoWeAreHeader {
+            font-size: 2em;
+            /* 16* 2 = 32px*/
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+        
+        #whoWeAreDescription {
+            margin-top: 24px;
+            font-size: 19px;
+        }
+        /* ------------------------------------ */
+        /* OUR BRANDS CSS */
+        
+        .greySection {
+            background-color: #947272;
+            /*background-color:yellow;*/
+        }
+        
+        img.ourBrandImages {
+            width: 5em;
+            max-height: 4em;
+            
+        }
+        
+        h2.ourBrandSubHeader {
+            font-size: 1em;
+            /* 16px = 1em */
+            font-weight: 800;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+         
+        h1{
+            font-size: 3em;
+            /* 16px = 1em */
+            font-weight: 900;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5em;
+            /* 16px = 1em */
+            font-weight: 800;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        /* ------------------------------------ */
+        /* FOOTER HERO SECTION CSS */
+        
+        footer p {
+            text-align: center;
+        }
+        
+        columns footer {
+            padding: 2px 2 px 2 px 2px;
+            border: 1px solid black;
+        }
+        
+        #footerSection {
+            background-color: #5c2f2f;
+        }
+        /*-------------------------------------------------------*/
+        /*-Grid tab images display*/
+        
+        .images {
+            width: fit-content;
+            height: 20em;
+            border: 5px solid black;
+        }
+        /*-----------------------------------------------*/
+        /* --Second Filtered Tags---------------*/
+        /*--------------------------------------------------*/
+        /*---- Listing Page formating-----*/
+        .textWithBlurredBg{
+            width:256px;
+            height:256px;
+            display:inline-block;
+            position:relative;
+            transition:.3s;
+            margin:1px;
+          }
+          
+          .textWithBlurredBg img{
+            width:100%;
+            height:100%;
+            transition:.3s;
+            border-radius:4px;
+          }
+          
+          .textWithBlurredBg:hover img{
+            filter:blur(2px) brightness(60%);
+            box-shadow:0 0 16px cyan;
+          }
+           
+          .textWithBlurredBg :not(img){
+            position:absolute;
+            z-index:1;
+            top:30%;
+            width:100%;
+            text-align:center;
+            color:#fff;
+            opacity:0;
+            transition:.3s;
+          }
+          
+          .textWithBlurredBg h3{
+            top:70%
+          }
+          
+          
+          .textWithBlurredBg:hover :not(img){
+            opacity:1;
+          }
+          /*------------------------------------*/
+          /*------------media queries ------------*/
+          @media screen 
+          and (min-device-width: 800px) 
+          and (max-device-width: 1200px) 
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (min-resolution: 192dpi) { 
+        }
+          /*------------------------------------*/

@@ -1,3 +1,19 @@
+const homes=[
+    { city  : "Toronto",     Rooms : "8 guests  :   2 bedroom    :   4 beds   : 2 bath",amenities:" Kitchen   :  Microwave  :  Iron  :  Morning Breakfast",facilities="Free Parking   :  Pet Allowed  :  smoking Allowed",  }
+    { city  : "Montreal",    Rooms : "3 guests  :   1 bedroom    :   2 beds   : 1 bath",amenities:" Kitchen   :  Microwave  :  Iron  ",facilities="Free Parking   :  Pet Allowed  :  smoking Allowed",  }
+    { city  : "Ottawa",      Rooms : "4 guests  :   2 bedroom    :   3 beds   : 1 bath",amenities:" Kitchen   :  Microwave  :  Iron  ",facilities="Free Parking   :  Pet Allowed  :  smoking Allowed",  }
+    { city  : "Niagara",     Rooms : "6 guests  :   2 bedroom    :   3 beds   : 2 bath",amenities:" Kitchen   :  Microwave  :  Iron  ",facilities="Free Parking   :  Pet Allowed  :  smoking Allowed", }
+    { city  : "Tobermory",   Rooms : "2 guests  :   1 bedroom    :   2 beds   : 1 bath",amenities:" Kitchen   :  Microwave  :  Iron  ",facilities="Free Parking   :  Pet Allowed  :  smoking Allowed", }
+    { city  : "Ottawa",      Rooms : "3 guests  :   1 bedroom    :   2 beds   : 1 bath",amenities:" Kitchen   :  Microwave  :  Iron  ",facilities="Free Parking   :  Pet Allowed  :  smoking Allowed",  }
+    { city  : "Montreal",    Rooms : "5 guests  :   2 bedroom    :   3 beds   : 2 bath",amenities:" Kitchen   :  Microwave  :  Iron  ",facilities="Free Parking   :  Pet Allowed  :  smoking Allowed",  }
+    { city  : "Toronto",     Rooms : "8 guests  :   2 bedroom    :   4 beds   : 2 bath",amenities:" Kitchen   :  Microwave  :  Iron  ",facilities="Free Parking   :  Pet Allowed  :  smoking Allowed",  }
+    ,
+    ]
+
+
+
+
+
 // Get Inpit element
 let findTemp = document.getElementById('find');
 

@@ -1,11 +1,10 @@
-
-function p1(){
-    window.location="image\home\home1.jpg"
-}
+//calculate the number of dates
 
 
-// Redirect to the Financial transaction page 
+
+
+// Redirect to the Financial transaction page after click on book
 
 function getBook() {
-   location.href="";
+   location.href="card.html";
 };
